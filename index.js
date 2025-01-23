@@ -58,6 +58,7 @@ function fizzBuzz(input) {
 //use  Math.floor(1.3)
 //12 points -> suspended
 
+/*
 chackSpeed(130);
 
 function chackSpeed(speed) {
@@ -72,5 +73,16 @@ function chackSpeed(speed) {
         console.log('License suspended');
        else
         console.log('Points', points);
+    }
+}
+*/
+
+// 14 Even and Odd Numbers
+showNumber(10);
+
+function showNumber(limit) {
+    for (let i = 0; i <= limit; i++) {
+        if (i % 2 === 0) console.log(i, 'EVEN');
+        else console.log(i, 'ODD');
     }
 }
