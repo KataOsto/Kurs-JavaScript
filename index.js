@@ -107,6 +107,7 @@ function countTruthy(array) {
 
 // 16 String Properties
 
+/*
 const movie = {
     title: 'a',
     releaseYear: 2018,
@@ -120,4 +121,24 @@ function showPropertis(obj) {
     for (let key in obj)
         if (typeof obj[key] === 'string')
             console.log(key, obj[key]);
+}
+*/
+
+// 17 Sum of Multiples of 3 and 5
+
+//Multiples of 3: 3 6 9
+//Multiples of 5: 5 10
+
+
+console.log (sum(10));
+
+function sum(limit) {
+    let sum = 0;
+
+   for (let i = 0; i <= limit; i++)
+    if (i % 3 === 0 || i % 5 === 0)
+        sum += i;
+
+   return sum;
+
 }
