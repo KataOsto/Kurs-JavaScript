@@ -91,6 +91,7 @@ function showNumber(limit) {
 
 // 15 Count Truthy
 
+/*
 const array = [0, null, undefined, '', 2, 3];
 
 console.log(countTruthy(array));
@@ -101,4 +102,22 @@ function countTruthy(array) {
         if (value)
             count++;
         return count;
+}
+*/
+
+// 16 String Properties
+
+const movie = {
+    title: 'a',
+    releaseYear: 2018,
+    rating: 4.5,
+    director: 'b' 
+};
+
+showPropertis(movie);
+
+function showPropertis(obj) {
+    for (let key in obj)
+        if (typeof obj[key] === 'string')
+            console.log(key, obj[key]);
 }
