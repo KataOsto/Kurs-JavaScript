@@ -147,13 +147,13 @@ function sum(limit) {
 // 18 Grade of a student
 
 // Averege = 70 
-
 // 0-59: F
 // 60-69: D
 // 70-79: C
 // 80-89: B
 // 90-100: A
 
+/*
 const array = [80, 80,50];
 
 console.log(calculateGrade(array));
@@ -172,4 +172,18 @@ function calculateAverage(array) {
     for (let value of array)
         sum += value;
     return sum / array.length;
+}
+*/
+
+// 19 Stars
+
+showStars(10);
+
+function showStars(rows) {
+    for (let row = 1; row <= rows; row++) {
+        let pattern = '';
+        for (let i = 0; i < row; i++)
+            pattern += '*';
+        console.log(pattern);
+    }
 }
