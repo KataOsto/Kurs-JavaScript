@@ -177,6 +177,7 @@ function calculateAverage(array) {
 
 // 19 Stars
 
+/*
 showStars(10);
 
 function showStars(rows) {
@@ -185,5 +186,30 @@ function showStars(rows) {
         for (let i = 0; i < row; i++)
             pattern += '*';
         console.log(pattern);
+    }
+}
+*/  
+
+// 20 Prime Numbers
+
+//Prime (whose factors are only 1 and itself)
+//Composite numbers
+// 12=1,2,3,4,6,12
+// Can be devided evenly by its factors
+
+showPrime(20);
+
+function showPrime(limit) {
+    for (let number= 2; number <= limit; number++) {
+
+        let isPrime = true;
+        for (let factor = 2; factor < number; factor++) {
+            if (number % factor === 0) {
+                isPrime = false; 
+                break;
+            }    
+        }
+        
+        if (isPrime) console.log(number);
     }
 }
