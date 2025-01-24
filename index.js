@@ -129,7 +129,7 @@ function showPropertis(obj) {
 //Multiples of 3: 3 6 9
 //Multiples of 5: 5 10
 
-
+/*
 console.log (sum(10));
 
 function sum(limit) {
@@ -141,4 +141,35 @@ function sum(limit) {
 
    return sum;
 
+}
+*/
+
+// 18 Grade of a student
+
+// Averege = 70 
+
+// 0-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: B
+// 90-100: A
+
+const array = [80, 80,50];
+
+console.log(calculateGrade(array));
+
+function calculateGrade(array) {
+    const average = calculateAverage(array);
+    if (average < 60) return 'F';
+    if (average < 70) return 'D';
+    if (average < 80) return 'C';
+    if (average < 90) return 'B';
+    return 'A';
+}
+
+function calculateAverage(array) {
+    let sum = 0;
+    for (let value of array)
+        sum += value;
+    return sum / array.length;
 }
