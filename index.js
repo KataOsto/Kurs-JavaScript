@@ -12,6 +12,7 @@ let y = 1;
 
 
 // Object-oriented Programming (OOP)
+/*
 const circle = {
     radius: 1,
     location: {
@@ -25,3 +26,24 @@ const circle = {
 };
 
 circle.draw(); // draw "Method" of an object
+*/
+
+// 2 Factory Functions
+
+
+function createCircle(radius) {
+    return {
+        radius,
+        draw() {
+            console.log('draw');
+        }
+    };
+  }
+
+const circle1 = createCircle(1);
+console.log(circle1);
+
+const circle2 = createCircle(2);
+console.log(circle2);
+
+
