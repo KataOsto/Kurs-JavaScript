@@ -61,6 +61,21 @@ const circle = new Circle(1);
 */
 
 
-// 4 Dynamic Nature
+// 4 Dynamic Nature of Objects
 
 
+/*
+const circle = {
+    radius:1
+};
+
+circle.color = 'yellow';
+circle.draw - function() {}
+
+delete circle.color;
+delete circle.draw;
+
+console.log(circle);
+*/
+
+// 4 Dynamic Nature of Objects
