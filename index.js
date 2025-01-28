@@ -30,7 +30,7 @@ circle.draw(); // draw "Method" of an object
 
 // 2 Factory Functions
 
-
+/*
 function createCircle(radius) {
     return {
         radius,
@@ -45,5 +45,22 @@ console.log(circle1);
 
 const circle2 = createCircle(2);
 console.log(circle2);
+*/
+
+
+// 3 Constructor Functions
+
+/*
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+}
+const circle = new Circle(1);
+*/
+
+
+// 4 Dynamic Nature
 
 
