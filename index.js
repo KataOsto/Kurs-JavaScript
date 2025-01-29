@@ -78,4 +78,30 @@ delete circle.draw;
 console.log(circle);
 */
 
-// 4 Dynamic Nature of Objects
+
+// 5 Constructor Property
+
+/*
+new String(); // "", '', 
+new Boolean(); // true, false
+new Number(); //1, 2, 3
+*/
+
+// 6 Function are Objects
+
+// in JavaScript function is object
+
+/*
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+}
+
+Circle.call({}, 1);
+Circle.apply({}, [1, 2, 3]);
+
+const another = new Circle(1);
+*/
+
