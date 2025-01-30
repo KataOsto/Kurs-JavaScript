@@ -143,10 +143,12 @@ for (let entry of Object.entries(circle))
     console.log(entry)
 */
 
+
 // 9 Cloning an Object
 
 // Geting all propertis in an object and copy them into another object
 
+/*
 const circle = {
     radius: 1,
     draw() {
@@ -164,5 +166,21 @@ const another = Object.assign({}, circle); //the propertis of this method in the
 const another = {...circle} //"..." Spread operator - it takes all the propertis and methods and puts them in between {}
 
 console.log(another);
+*/
 
+
+// 10 Garbage Collection
+
+// at the time we initialized an object, the memory is automatically allocated to this object
+// after using it we don't need to deallocate the mmemory
+
+/*
+let circle = {};
+    console.log(circle);
+*/
+
+// 11 Math - object
+
+// MATH - is a built-in object that has propertis and methods for mathematical
+// constants and functions. Not a function object.
 
