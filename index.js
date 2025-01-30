@@ -125,7 +125,7 @@ x.value = 20;  // changing value of x=20  in this exemple the value is stord in 
 // 8 Enumerating Propertis of a Object
 
 // the best way to enumerait propertis in an object is to use "for in" loop
-
+/*
 const circle = {
     radius: 1,
     draw() {
@@ -141,4 +141,28 @@ for (let key of Object.keys(circle))
 
 for (let entry of Object.entries(circle))
     console.log(entry)
+*/
+
+// 9 Cloning an Object
+
+// Geting all propertis in an object and copy them into another object
+
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+}
+
+//const another = {};               // {} symbolize a new object in witch we copy the propertis from "circle"
+
+//for (let key in circle)           //old method
+//   another[key] = circle[key];    //old method
+
+const another = Object.assign({}, circle); //the propertis of this method in the source object and copies them into new object and returns the result
+
+const another = {...circle} //"..." Spread operator - it takes all the propertis and methods and puts them in between {}
+
+console.log(another);
+
 
