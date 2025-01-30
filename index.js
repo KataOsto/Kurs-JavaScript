@@ -87,6 +87,7 @@ new Boolean(); // true, false
 new Number(); //1, 2, 3
 */
 
+
 // 6 Function are Objects
 
 // in JavaScript function is object
@@ -104,4 +105,40 @@ Circle.apply({}, [1, 2, 3]);
 
 const another = new Circle(1);
 */
+
+// 7 Value vs Reference Types
+
+/*
+//Exemple 1 - 2 independent values
+let x = 10; //independent value
+let y = x; //independent value
+
+x = 20;  // changing value of x=20 - y=10 stays the same
+
+//Exemple 2 - 2 independent values
+let x = {value: 10}; //independent object
+let y = x; //independent value
+
+x.value = 20;  // changing value of x=20  in this exemple the value is stord in memory y=20
+*/
+
+// 8 Enumerating Propertis of a Object
+
+// the best way to enumerait propertis in an object is to use "for in" loop
+
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+}
+
+for (let key in circle)
+    console.log(key, circle[key]);
+
+for (let key of Object.keys(circle))
+    console.log(key);
+
+for (let entry of Object.entries(circle))
+    console.log(entry)
 
