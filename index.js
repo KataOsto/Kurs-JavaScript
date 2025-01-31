@@ -184,3 +184,25 @@ let circle = {};
 // MATH - is a built-in object that has propertis and methods for mathematical
 // constants and functions. Not a function object.
 
+// 12 String
+/*
+// In javascript we have 2 types of "string"
+const massage = 'hi';                  // String primitive
+const another = new String('hi');          // String object
+
+const massage = 'This is my first massage';   
+*/
+
+
+
+
+
+
+
+
+// 13 Tamplate Literals
+
+
+
+
+// 14 Date
