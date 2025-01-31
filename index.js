@@ -179,10 +179,12 @@ let circle = {};
     console.log(circle);
 */
 
+
 // 11 Math - object
 
 // MATH - is a built-in object that has propertis and methods for mathematical
 // constants and functions. Not a function object.
+
 
 // 12 String
 /*
@@ -194,15 +196,26 @@ const massage = 'This is my first massage';
 */
 
 
-
-
-
-
-
-
 // 13 Tamplate Literals
 
+// Object {}
+//Boolean true, false
+//String ''. ""
+//Tamplate ``
 
+/* 
+const name = 'John';
+const massage = 'Hi' + name + ',\n';
+
+const another = 
+`Hi ${name},
+
+Thank you for joining my mailing list.
+
+Regards,
+Mosh`;
+*/
 
 
 // 14 Date
+
