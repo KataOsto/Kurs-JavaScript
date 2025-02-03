@@ -38,10 +38,9 @@ function createAdress(street, city, zipcode) {          // We  give it 3 paramit
         zipcode
     };
 } 
-*/
+
 //Constrructor Function
 // it has a diffrent naming convention, so we use Pascal notation 
-
 
 let address = new Address('a', 'b', 'c');      // We use a new operator and call are constructor function once we pass the values
 
@@ -52,3 +51,31 @@ function Address(street, city, zipcode) {      // Insted of returning an objest 
     this.city = city;
     this.zipcode = zipcode;
 }
+*/
+
+
+// 17 - Exercise 3 - Object Equality
+
+// Create two objects
+// Create two functions: 1 is calld "areEqual" so we pass two address object, 
+let address1 = new Address('a', 'b', 'c');    
+let address2 = new Address('a', 'b', 'c');  
+
+console.log(areEqual(address1, address2));
+console.log(areSame(address1, address2));
+
+function Address(street, city, zipcode) {     
+    this.street = street;
+    this.city = city;
+    this.zipcode = zipcode;
+}
+
+function areEqual(address1, address2) {                   //we pass to adress object and see if they are Equal //=== Equality operator - chect if equal
+    return     address1.street === address2.street &&     // we need to return a bollean - the result of evaluation of the three conditional statment
+        address1.city === address2.city &&
+        address1.zipcode === address2.zipcode;
+}
+
+function areSame (address1, address2)  {                  // This function tells if the they are referencing the same object
+      return address1 === address2;                       // Use the strict equality operator to chack if the they are referencing the same object
+} 
