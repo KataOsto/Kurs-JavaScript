@@ -112,7 +112,7 @@ console.log(post);
 
 //Create a post object using constructor function
 //We are creating a bloging engine, the user is drafting a post, but they have not publisth it yet.
-
+/*
 let post = new Post('a', 'b', 'c');         
  
 console.log(post);
@@ -125,3 +125,19 @@ function Post(title, body, author) {
     this.comments = []; // we use an empty arrey 
     this.islive = false;
 }
+ */
+
+
+// 20 - Exercise 6 - Price Range Object
+
+// Create an arrey of objects calld a price range object
+
+let priceRanges = [
+    {label: '$', tooltip: 'Inexpensive', minPerPerson: 0, maxPerPerson: 10 }
+    {label: '$$', tooltip: 'Moderate', minPerPerson: 11, maxPerPerson: 20 }
+    {label: '$$$', tooltip: 'Expensive', minPerPerson: 21, maxPerPerson: 50 }
+];
+
+let restourants = [
+    {averagePerPerson: 5}
+];
