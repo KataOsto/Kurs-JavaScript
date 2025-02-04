@@ -92,7 +92,7 @@ function areSame (address1, address2)  {                  // This function tells
 // views - how ment times the post has been seen
 // comments - with propertis - author and body
 //isLive - true or false
-
+/*
 let post = {            // Create a post object be using "the object literal syntax"
     title: 'a',         //string
     body: 'b',           //string
@@ -106,6 +106,22 @@ let post = {            // Create a post object be using "the object literal syn
 };   
 
 console.log(post);
+*/
 
+// 19 - Exercise 5 - Constructor function
 
+//Create a post object using constructor function
+//We are creating a bloging engine, the user is drafting a post, but they have not publisth it yet.
 
+let post = new Post('a', 'b', 'c');         
+ 
+console.log(post);
+
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;   //we use 0 becouse in creating a post we do nat see views
+    this.comments = []; // we use an empty arrey 
+    this.islive = false;
+}
