@@ -57,7 +57,8 @@ function Address(street, city, zipcode) {      // Insted of returning an objest 
 // 17 - Exercise 3 - Object Equality
 
 // Create two objects
-// Create two functions: 1 is calld "areEqual" so we pass two address object, 
+// Create two functions: 1 is calld "areEqual" so we pass two address object,
+/* 
 let address1 = new Address('a', 'b', 'c');    
 let address2 = new Address('a', 'b', 'c');  
 
@@ -79,3 +80,32 @@ function areEqual(address1, address2) {                   //we pass to adress ob
 function areSame (address1, address2)  {                  // This function tells if the they are referencing the same object
       return address1 === address2;                       // Use the strict equality operator to chack if the they are referencing the same object
 } 
+  */
+ 
+
+// 18 - Exercise 4 - Blog post
+
+//Create blog post object with propertis : 
+// title 
+// body 
+// author
+// views - how ment times the post has been seen
+// comments - with propertis - author and body
+//isLive - true or false
+
+let post = {            // Create a post object be using "the object literal syntax"
+    title: 'a',         //string
+    body: 'b',           //string
+    author: 'c',         //string
+    views: 10,          //number
+    comments: [         //array (tabela), we need to make it an object we use "object litheral syntax" to initialize a comment object
+        {author: 'a', body: 'b'},
+        {author: 'c', body: 'd'},
+    ],
+    islive: true
+};   
+
+console.log(post);
+
+
+
