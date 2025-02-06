@@ -19,7 +19,7 @@ console.log(numbers);
 
 
 // 3 - Finding Elements(Primitive)
-
+/*
 //Finding elements in an array depends on if we are storing primitives or reference types.
 
 const numbers = [1, 2, 3, 4];
@@ -35,3 +35,18 @@ console.log(numbers.lastIndexOf(1));
 //Includes - returns true if element exist in the array
 
 console.log(numbers.includes(1));
+*/
+
+
+// 4 - Finding Elements(Reference Types)
+
+const courses = [
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'},
+];
+
+const course = courses.find(function(course) {
+    return course.name === 'a';
+});
+
+console.log(course);
