@@ -39,7 +39,7 @@ console.log(numbers.includes(1));
 
 
 // 4 - Finding Elements(Reference Types)
-
+/*
 const courses = [
     {id: 1, name: 'a'},
     {id: 2, name: 'b'},
@@ -48,5 +48,19 @@ const courses = [
 const course = courses.find(function(course) {
     return course.name === 'a';
 });
+
+console.log(course);
+*/
+
+
+// 5 - Arrow Functions
+
+//To pass a function, as a callback function or as an argument for a diffrent method
+const courses = [
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'},
+];
+// Finnding a course with the name equal to "a" - =>
+const course = courses.find(course => course.name === 'a');
 
 console.log(course);
