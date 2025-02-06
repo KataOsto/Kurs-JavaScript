@@ -54,7 +54,7 @@ console.log(course);
 
 
 // 5 - Arrow Functions
-
+/*
 //To pass a function, as a callback function or as an argument for a diffrent method
 const courses = [
     {id: 1, name: 'a'},
@@ -64,3 +64,21 @@ const courses = [
 const course = courses.find(course => course.name === 'a');
 
 console.log(course);
+*/
+
+
+// 6 - Removing Elements
+
+const numbers = [1, 2, 3, 4];
+
+//End -
+const last = numbers.pop();
+console.log(last);
+
+//Beginning -
+const first = numbers.unshift();
+console.log(first);
+
+//Middle -
+numbers.splice(2, 2);
+console.log(numbers);
