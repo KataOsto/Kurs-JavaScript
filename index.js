@@ -68,7 +68,7 @@ console.log(course);
 
 
 // 6 - Removing Elements
-
+/*
 const numbers = [1, 2, 3, 4];
 
 //End -
@@ -82,3 +82,26 @@ console.log(first);
 //Middle -
 numbers.splice(2, 2);
 console.log(numbers);
+*/
+
+// 7 - Emptying an Array
+
+let numbers = [1, 2, 3, 4];
+let another = numbers;
+//Solution 1 - we reassign to a new array - works if we dont have a references to the orriginal array.
+numbers = [];
+
+//Solution 2 - we remove all elements
+numbers.length = 0;
+
+//Solution 3 - we can go to a given posision and remove one or more elements
+numbers.splice(0, numbers.length);
+
+//Solution 4 - loop
+while (numbers.length > 0)
+    numbers.pop();
+
+
+console.log(numbers);
+console.log(another);
+
