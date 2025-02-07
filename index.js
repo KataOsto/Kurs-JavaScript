@@ -85,7 +85,7 @@ console.log(numbers);
 */
 
 // 7 - Emptying an Array
-
+/*
 let numbers = [1, 2, 3, 4];
 let another = numbers;
 //Solution 1 - we reassign to a new array - works if we dont have a references to the orriginal array.
@@ -104,4 +104,34 @@ while (numbers.length > 0)
 
 console.log(numbers);
 console.log(another);
+*/
 
+
+// 8 - Combination and Sliceing Arrays
+/*
+//Declaring 2 arrays
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+// Using the "concat" method - it will return the combination of the 2 arryas
+const combined = first.concat(second);
+
+// We slice the array in too parts
+const slice = combined.slice(2, 4);
+
+console.log(combined);
+console.log(slice);
+*/
+
+//Declaring 2 arrays, but one of them is an object
+const first = [{id: 1}];
+const second = [4, 5, 6];
+
+
+const combined = first.concat(second);
+first[0].id = 10;  // we copy not the object but the reference of the object
+
+const slice = combined.slice(2, 4); 
+
+console.log(combined);
+console.log(slice);
