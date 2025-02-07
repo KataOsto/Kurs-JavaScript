@@ -121,7 +121,7 @@ const slice = combined.slice(2, 4);
 
 console.log(combined);
 console.log(slice);
-*/
+
 
 //Declaring 2 arrays, but one of them is an object
 const first = [{id: 1}];
@@ -135,3 +135,16 @@ const slice = combined.slice(2, 4);
 
 console.log(combined);
 console.log(slice);
+*/
+
+
+// 9 - Spread Operator
+
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+// Combining arrays by using the Spread Operator
+
+const combined = [...first, ...second];  // we create a new array be combining the const
+
+const slice = combined.slice();
