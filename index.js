@@ -139,7 +139,7 @@ console.log(slice);
 
 
 // 9 - Spread Operator
-
+/*
 const first = [1, 2, 3];
 const second = [4, 5, 6];
 
@@ -148,3 +148,18 @@ const second = [4, 5, 6];
 const combined = [...first, ...second];  // we create a new array be combining the const
 
 const slice = combined.slice();
+*/
+
+
+
+// 10- Iterating an Array
+
+const first = [1, 2, 3];
+
+// The foeEach function - it will be executed for each element in the array
+for (let number of numbers)
+    console.log (number);
+
+number.forEach(function(number) {
+    console.log(number);
+});
