@@ -153,13 +153,27 @@ const slice = combined.slice();
 
 
 // 10- Iterating an Array
-
+/*
 const first = [1, 2, 3];
 
-// The foeEach function - it will be executed for each element in the array
+// The forEach function - it will be executed for each element in the array
 for (let number of numbers)
     console.log (number);
 
 number.forEach(function(number) {
     console.log(number);
 });
+*/
+
+
+// 11- Joining Arrays
+
+// Join the elements in yhe array, we use 'join method'
+
+const numbers = [1, 2, 3];
+const joined = numbers.join(',');
+
+console.log(joined);
+
+
+
