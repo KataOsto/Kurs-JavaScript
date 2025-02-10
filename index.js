@@ -167,13 +167,62 @@ number.forEach(function(number) {
 
 
 // 11- Joining Arrays
-
+/*
 // Join the elements in yhe array, we use 'join method'
 
 const numbers = [1, 2, 3];
 const joined = numbers.join(',');
-
 console.log(joined);
+*/
 
 
+// 12- Sorting Arrays
+/*
+//Przykład 1 - sort
+const numbers = [2, 3, 1];
+numbers.sort();
+console.log(numbers);
 
+//Przykład 2 - reverse
+numbers.reverse();
+console.log(numbers);
+
+
+//Przykład 3 - we want to sort by name
+const courses = [
+{id: 1, name:'Node.js'},
+{id: 2, name:'JavaScript'},
+];
+
+courses.sort(function(a, b){
+    //a < b => -1
+    //a > b => 1
+    //a === b => 0
+const namA = a.name.toLocaleUpperCase();   // the first name will be taken as writen in uppercase
+const namB = b.name.toLocaleUpperCase();   // the first name will be taken as writen in uppercase
+
+    if (namA < namB) return -1;
+    if (namA > namB) return 1;
+    return 0;
+})
+
+console.log(courses);
+*/
+
+
+// 13- Testing the Elements of an Array
+
+// Cheking if the numbers in the array are positive
+const numbers = [1, 2, 3];
+
+const allPosivive = numbers.every(function(value){
+    return value >= 0;
+});
+
+console.log(allPosivive);
+
+const atLeastOnePosivive = numbers.some(function(value){
+    return value >= 0;
+});
+
+console.log(atLeastOnePosivive);
