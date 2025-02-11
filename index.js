@@ -229,7 +229,7 @@ console.log(atLeastOnePosivive);
 */
 
 // 14 - Filtering an Array
-
+/*
 // How to filter an array based on a search criteria. 
 // if value is positive
 
@@ -239,3 +239,17 @@ const filterd = numbers.filter(function(value) {
     return value >= 0;
 });
 console.log(filterd);
+*/
+
+
+// 15 - Mapping an Array
+
+const numbers =  [1, -1, 2, 3];
+
+const filterd = numbers.filter(n => n >= 0);
+
+const items = filterd.map(n => '<li>' + n + '</li>');
+
+const html = '<ul>' + items.join('') + '</ul>';
+
+console.log(html);
