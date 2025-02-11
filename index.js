@@ -243,7 +243,7 @@ console.log(filterd);
 
 
 // 15 - Mapping an Array
-
+/*
 const numbers =  [1, -1, 2, 3];
 
 const filterd = numbers.filter(n => n >= 0);
@@ -253,3 +253,22 @@ const items = filterd.map(n => '<li>' + n + '</li>');
 const html = '<ul>' + items.join('') + '</ul>';
 
 console.log(html);
+*/
+
+
+// 16 - Reducing an Array
+
+// We want to calculat the summ of all these numbers
+const numbers =  [1, -1, 2, 3];
+
+//metoda sumowania
+let sum = 0;
+for (let n of numbers);
+sum += n;
+console.log(sum);
+
+//metoda reducing
+
+const sum = numbers.reduce((accumulator, currentValue) => {
+    reurn accumulator + currentValue;
+}, 0);
