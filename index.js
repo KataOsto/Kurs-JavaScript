@@ -211,7 +211,7 @@ console.log(courses);
 
 
 // 13- Testing the Elements of an Array
-
+/*
 // Cheking if the numbers in the array are positive
 const numbers = [1, 2, 3];
 
@@ -226,3 +226,16 @@ const atLeastOnePosivive = numbers.some(function(value){
 });
 
 console.log(atLeastOnePosivive);
+*/
+
+// 14 - Filtering an Array
+
+// How to filter an array based on a search criteria. 
+// if value is positive
+
+const numbers =  [1, -1, 2, 3];
+
+const filterd = numbers.filter(function(value) {
+    return value >= 0;
+});
+console.log(filterd);
