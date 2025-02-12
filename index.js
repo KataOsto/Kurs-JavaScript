@@ -39,7 +39,7 @@ function includes(array, searchElements) {
 
 
 // 19 - Exercise 3 - Except
-
+/*
 const numbers = [1, 2, 3, 4];
 
 const output = except(numbers, [1, 2]);
@@ -53,4 +53,33 @@ function except(array, excluded) {
         if (!excluded.includes(element))
             output.push(element);
         return output;
+}
+*/
+
+
+// 20 - Exercise 4 - Moving on Element
+
+// We have the function "move" and we use that to move an element in an array
+
+const numbers = [1, 2, 3, 4];
+
+const output = move(numbers, 0, 1);
+
+console.log(output);
+
+function move(array, index, offset) {
+// we need to do some basic validation before running this algorithm
+    const position = index + offset;
+// We cheak if posision is the same as lenght
+    if (position >= array.length || position < 0) {
+        console.error('invalid offset');
+        return;
+    }
+// We wont copy the numbers array so we use the spread operator - we cone the original array
+    const output = [...array];
+// As part of moving an element, first we need to remove it from the array and then place it back at the right position    
+// to remove an element from the array we use the splice method
+    const element = output.splice(index, 1)[0];
+    output.splice(index + offset,0 ,element);
+    return output;
 }
