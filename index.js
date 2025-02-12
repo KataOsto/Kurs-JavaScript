@@ -1,5 +1,5 @@
 // 17 - Exercise 1 - Array from Gange
-
+/*
 // Write an array of the name arrayFromRange. This funcion should take two paramiters 'min' and 'max'
 // When we run this program we get an array with the numbers from 1 to 4
 
@@ -16,4 +16,22 @@ function arrayFromRange (min, max) {
     output.push(i);
 // And we return are output
     return output;
+}
+*/
+
+
+// 18 - Exercise 2 - Includes
+
+// Write a function like the includes method
+// Create a function that takes an array and searchElements
+
+const numbers = [1, 2, 3, 4];
+
+console.log(includes(numbers, 1));
+
+function includes(array, searchElements) {
+    for (let element of array)
+        if (element === searchElements)
+            return true;
+    return false;
 }
