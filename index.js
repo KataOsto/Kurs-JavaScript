@@ -21,7 +21,7 @@ function arrayFromRange (min, max) {
 
 
 // 18 - Exercise 2 - Includes
-
+/*
 // Write a function like the includes method
 // Create a function that takes an array and searchElements
 
@@ -34,4 +34,23 @@ function includes(array, searchElements) {
         if (element === searchElements)
             return true;
     return false;
+}
+*/
+
+
+// 19 - Exercise 3 - Except
+
+const numbers = [1, 2, 3, 4];
+
+const output = except(numbers, [1, 2]);
+
+console.log(output);
+
+function except(array, excluded) {
+// Decler an array called output and initialize it to an empty, this is what we're going to return from this function
+    const output = [];
+    for (let element of array)
+        if (!excluded.includes(element))
+            output.push(element);
+        return output;
 }
