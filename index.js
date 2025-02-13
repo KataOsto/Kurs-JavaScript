@@ -148,7 +148,7 @@ function getMax(array) {
 };
 */
 //Reduce method
-
+/*
 const numbers = [1, 2, 3, 4];
 
 const max = getMax([]);
@@ -159,3 +159,31 @@ function getMax(array) {
     if (array.length === 0) return undefined;
     return array.reduce((a,b) => (a>b) ? a:b);
 };
+*/
+
+
+// 23 - Exercise 7 - Movies
+
+// Decler a constant calld movies, with an array of objects
+const movies = [
+    { title: 'a', year: 2018, rating: 4.5 },
+    { title: 'b', year: 2018, rating: 4.7 },
+    { title: 'c', year: 2018, rating: 3 },
+    { title: 'd', year: 2017, rating: 4.5 },
+];
+
+// All the movies in 2018 with rating > 4
+// Sort them by their raiting
+// Decending order
+// Pick their title
+
+
+const titles = movies
+//Filter-  All the movies in 2018 with rating > 4
+    .filter(m => m.year === 2018 && m.rating >= 4)
+// Sorting - Sort them by their raiting
+    .sort((a, b) => a.rating - b.rating)
+//  Decending order
+    .reverse(m => m.title)
+
+console.log(titles);
