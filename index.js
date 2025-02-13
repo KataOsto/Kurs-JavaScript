@@ -109,7 +109,7 @@ function countOcurrences(array,searchElements) {
 };
 */
 //Example 2
-
+/*
 const numbers = [1, 2, 3, 4];
 
 const count = countOcurrences(numbers, 0, 1);
@@ -122,4 +122,40 @@ function countOcurrences(array,searchElements) {
         console.log(accumulator, current, searchElements);
         return accumulator + occurrence;
     }, 0);
+};
+*/
+
+
+// 22 - Exercise 6 - Get MAX
+/*
+// Returning the bigist number in the array
+const numbers = [1, 2, 3, 4];
+
+const max = getMax([]);
+
+console.log(max);
+
+function getMax(array) {
+    if (array.length === 0) return undefined;
+
+    let max = array[0];
+
+    for (let i=1; < array.length; i++)
+        if (array[i] > max)
+            max = array[i];
+
+    return max;
+};
+*/
+//Reduce method
+
+const numbers = [1, 2, 3, 4];
+
+const max = getMax([]);
+
+console.log(max);
+
+function getMax(array) {
+    if (array.length === 0) return undefined;
+    return array.reduce((a,b) => (a>b) ? a:b);
 };
