@@ -58,7 +58,7 @@ function except(array, excluded) {
 
 
 // 20 - Exercise 4 - Moving on Element
-
+/*
 // We have the function "move" and we use that to move an element in an array
 
 const numbers = [1, 2, 3, 4];
@@ -83,3 +83,43 @@ function move(array, index, offset) {
     output.splice(index + offset,0 ,element);
     return output;
 }
+*/
+
+
+// 21 - Exercise 5 - Count Occurrences
+
+// Create a function calld 'occurrencese', this function takes an array and search elements
+//and tuenes the number of times that search element has occurred in this array
+/*
+//Example 1
+const numbers = [1, 2, 3, 4];
+
+const count = countOcurrences(numbers, 0, 1);
+
+console.log(count);
+
+function countOcurrences(array,searchElements) {
+// We declare account variable and initialize it to 0
+    let count = 0;
+// NOw we need to iterate over this, and if find element we're goging to increment count
+    for (let element of array)
+        if (element === searchElements)
+            count++;
+    return  count;
+};
+*/
+//Example 2
+
+const numbers = [1, 2, 3, 4];
+
+const count = countOcurrences(numbers, 0, 1);
+
+console.log(count);
+
+function countOcurrences(array,searchElements) {
+    return array.reduce((accumulator, current) => {
+        const occurrence = (current === searchElements) ? 1: 0;
+        console.log(accumulator, current, searchElements);
+        return accumulator + occurrence;
+    }, 0);
+};
