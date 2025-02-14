@@ -41,7 +41,7 @@ function walk () {
 */
 
 // 3 - Arguments
-
+/*
 //arguments is an array-like object accessible inside functions that contains the values of the arguments passed to that function
 function sum() {
     let total = 0;
@@ -51,12 +51,26 @@ function sum() {
 }
 
 console.log(sum(1, 2, 3, 4, 5, 10));
+*/
 
 
+// 4 - The Rest Operator
 
+// Function with a varying numbers of parameters
+// When we use the rest operator to a parameter function we can pass a varying number of arguments and the 
+// rest operator will take all of them and put them in an array
+function sum(...args) {  //...- the rest operator
+ console.log(args);
+}
 
+console.log(sum(1, 2, 3, 4, 5, 10));
 
-
+//rest operator and reduce
+function sum(...args) {  
+    return args.reduce((a, b) => a+ b);
+   }
+   
+   console.log(sum(1, 2, 3, 4, 5, 10));
 
 
 
