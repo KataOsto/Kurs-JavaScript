@@ -83,7 +83,7 @@ console.log(interest(10000));
 
 
 // 6 - Getters and Setters
-
+/*
 // Define method in the object called "full name"
 
 const person = {
@@ -104,7 +104,32 @@ const person = {
 
 person.firstName = 'John Smith';
 console.log(person);
+*/
 
+
+// 7 - Try and Catch
+
+const person = {
+    firstName: 'Mosh',
+    lastName: 'Hamedani',
+    set fullName(value){
+        if (typeof value !== 'string')
+            throw new Error('Value is not a string');
+          
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+try {                       // try block can have 1 or more statements, on of them can throw an exception
+    person.fullName = null;
+}
+catch (e) {
+    alert(e);
+}
+
+console.log(person);
 
 
 
