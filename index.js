@@ -55,7 +55,7 @@ console.log(sum(1, 2, 3, 4, 5, 10));
 
 
 // 4 - The Rest Operator
-
+/*
 // Function with a varying numbers of parameters
 // When we use the rest operator to a parameter function we can pass a varying number of arguments and the 
 // rest operator will take all of them and put them in an array
@@ -71,6 +71,16 @@ function sum(...args) {
    }
    
    console.log(sum(1, 2, 3, 4, 5, 10));
+*/
+
+
+// 5 - Default Parameters
+
+function interest(principal, rate = 3.5, years = 5) {
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000));
 
 
 
