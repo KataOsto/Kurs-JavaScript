@@ -69,22 +69,41 @@ console.log(sum(1, 2, 3, 4, 5, 10));
 function sum(...args) {  
     return args.reduce((a, b) => a+ b);
    }
-   
    console.log(sum(1, 2, 3, 4, 5, 10));
 */
 
 
 // 5 - Default Parameters
-
+/*
 function interest(principal, rate = 3.5, years = 5) {
     return principal * rate / 100 * years;
 }
-
 console.log(interest(10000));
+*/
 
 
+// 6 - Getters and Setters
 
+// Define method in the object called "full name"
 
+const person = {
+    firstName: 'Mosh',
+    lastName: 'Hamedani',
+    get fullName() {                    // get - make it a getter
+        return '${person.firstName} ${person.lastName}';
+    },
+    set fullName(value) {  // set - make it a setter
+    const parts = value.split(' ');
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+    }  
+};
+
+// getters - access propertis in an object
+// setters - change or mutate propertis in an object
+
+person.firstName = 'John Smith';
+console.log(person);
 
 
 
