@@ -108,7 +108,7 @@ console.log(person);
 
 
 // 7 - Try and Catch
-
+/*
 const person = {
     firstName: 'Mosh',
     lastName: 'Hamedani',
@@ -130,6 +130,29 @@ catch (e) {
 }
 
 console.log(person);
+*/
+
+
+// 8 - Local and Blobal Scope
+
+// The Script scope is a useful place to store variables which must be 
+// shared without exposing the variable to the Global scope
+
+
+
+const color = 'red';    //Global scope: The default scope for all code running in script mode.
+
+function start() {
+    const message = 'hi';
+    const color = 'blue';
+    console.log(color);
+}
+
+function stop() {
+    const message = 'bye';
+}
+
+start();
 
 
 
