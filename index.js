@@ -134,11 +134,9 @@ console.log(person);
 
 
 // 8 - Local and Blobal Scope
-
+/*
 // The Script scope is a useful place to store variables which must be 
 // shared without exposing the variable to the Global scope
-
-
 
 const color = 'red';    //Global scope: The default scope for all code running in script mode.
 
@@ -153,8 +151,20 @@ function stop() {
 }
 
 start();
+*/
 
 
+// 9 - Let vs Var
 
+// 'Var' to najstarszy typ deklaracji, który jest dostępny w JS. Może być używany wielokrotnie 
+// i jest widoczny globalnie lub lokalnie w funkcji. 'Let' to nowszy typ deklaracji zmiennych, 
+// który jest widoczny tylko w obrębie bloku, wysłania instrukcji lub wyrażenia, w którym jest używany.
 
+var color = 'red';    //in this state var becomes a window variable - DONT  DO IT
+let age = 30;
 
+function sayHi() {
+    console.log('hi')
+}
+
+// Avoide using 'var keywords, becose it creates variables that are function 'Scope, not block scope.
