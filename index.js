@@ -155,7 +155,7 @@ start();
 
 
 // 9 - Let vs Var
-
+/*
 // 'Var' to najstarszy typ deklaracji, który jest dostępny w JS. Może być używany wielokrotnie 
 // i jest widoczny globalnie lub lokalnie w funkcji. 'Let' to nowszy typ deklaracji zmiennych, 
 // który jest widoczny tylko w obrębie bloku, wysłania instrukcji lub wyrażenia, w którym jest używany.
@@ -168,3 +168,55 @@ function sayHi() {
 }
 
 // Avoide using 'var keywords, becose it creates variables that are function 'Scope, not block scope.
+*/
+
+// 10 - The this Keyword
+
+// The "object" that is executing the current function
+
+/*
+// method -> object
+
+const video = {
+    title: 'a',
+    play() {
+        console.log(this);
+    }
+};
+
+video.stop = function() {
+    console.log(this);
+};
+
+video.stop();
+*/
+/*
+// funtion -> global (window, global)
+
+const video = {
+    title: 'a',
+    play() {
+        console.log(this);
+    }
+};
+
+function playVideo() {
+    console.log(this);
+}
+
+playVideo();
+*/
+
+// funtion -> global (window, global)
+const video = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    ShowTags() {
+        this.tags.forEach(function(tag) {
+            console.log(this.title, tag);
+        }, this);
+    }
+};
+
+video.ShowTags();
+
