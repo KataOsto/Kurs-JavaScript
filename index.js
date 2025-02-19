@@ -206,7 +206,7 @@ function playVideo() {
 
 playVideo();
 */
-
+/*
 // funtion -> global (window, global)
 const video = {
     title: 'a',
@@ -219,4 +219,39 @@ const video = {
 };
 
 video.ShowTags();
+*/
 
+
+
+// 10 - The this Keyword
+
+
+//Arrow functions
+const video = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    ShowTags() {
+        this.tags.forEach(tag  => {
+            console.log(this.title, tag);
+        });
+    }
+};
+
+video.ShowTags();
+
+//Functions are objects in JS 
+//changing the value of this by using:bind, call, apply
+
+/*
+function playVideo(a, b) {
+    console.log(this);
+}
+//CALL - a, b
+playVideo.call({ name: 'Mosh'}, 1, 2);
+//APPLY - applaing other values in an array [1,2]
+playVideo.apply({ name: 'Mosh'}, [1, 2]);
+//BIND - it returns a new function
+const fn = playVideo.bind({ name: 'Mosh'})();
+
+playVideo();
+*/
